@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcoder Video - Python Server</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <div class="card">
+      <div class="card-header">
+        <h2>Transcoder Video Sederhana</h2>
+        <p>Proses video menggunakan Server Python & FFmpeg Native di komputer lokal.</p>
+      </div>
+
+      <div class="card-body">
+        <div class="form-group">
+          <label for="video-input">Pilih File Video</label>
+          <input type="file" id="video-input" accept="video/*">
+          <button id="cancel-input-btn" class="btn-secondary" style="display: none; margin-top: 8px;">✕ Batal Pilih File</button>
+        </div>
+
+        <button id="convert-btn" class="btn" disabled>Proses Video di Server</button>
+
+        <div class="status-container">
+          <p id="status-text">Silakan pilih file video terlebih dahulu...</p>
+        </div>
+
+        <div class="result-container">
+          <video id="output-video" controls width="100%" style="display: none;"></video>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
