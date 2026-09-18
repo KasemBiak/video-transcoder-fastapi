@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+temp_uploads/
+temp_outputs/
+*.mp4
+*.mov
+*.avi
+bin/ffmpeg.exe
+.env
+.venv/
